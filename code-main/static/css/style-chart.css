@@ -1,0 +1,13 @@
+*{
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+body{
+    background-color: #272b34;
+    font-family: "Khula", sans-serif;
+    font-weight: 50;
+    color: white;
+    line-height: 1em;
+    margin: 0;
+    padding: 1em 1em;
+}

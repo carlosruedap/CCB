@@ -1,0 +1,31 @@
+
+.dash{
+    height: 500px;
+}
+.grap{
+    width: 40%;
+}
+
+.predict-view{
+    padding-top: 30em;
+    background-color: skyblue;
+    width: 49%;
+}
+.grap, .predict-view{
+    display: inline-block;
+    height: 100%;
+}
+
+.sub-group{
+    height: 50px;
+}
+.SE-view{
+    width: 50%;
+}
+.SP-view{
+    width: 50%;
+}
+.SE-view, .SP-view{
+    display: inline-block;
+    height: 100%;
+}

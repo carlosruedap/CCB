@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="../static/css/style-chart.css">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DataGood</title>
+</head>
+<style>
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    .container{
+        display: flex;
+    }
+    .chart{
+
+        width: 50%;
+    }
+    .box{
+        background-color: #FFD700;
+        color: black;
+        width: 50%;
+        padding: 2%;
+    }
+    .box-mini1{
+        background-color: #006633;
+        color:white;
+        width: 25%;
+        padding: 2%;
+    }
+    .box-mini2{
+        background-color: white;
+        color:black;
+        width: 25%;
+        padding: 2%;
+    }
+    @media (max-width: 768px){
+        .container{
+            flex-direction: column;
+        }
+        .box{
+            width: 100%;
+        }
+    }
+</style>
+<body>
+    <div class="container">
+        <div id="chart" class="chart"></div>
+        <div class="box">
+            <p>
+                Estimado empresario,</br>
+
+                Basado en los datos obtenidos del DANE y la predicción de la base de datos MARO, te presento un resumen claro de las proyecciones para el sector farmacéutico:
+                <br>
+                Predicciones clave:
+<br>
+IPC (Índice de Precios al Consumidor): La proyección de IPC para el próximo mes indica un aumento, lo que implica un alza en el costo de vida. Esto, sumado a la previsión del IPP, podría impactar la demanda en el mercado, especialmente si el alza es significativa.
+<br>
+Ventas farmacéuticas (2023-2024): Las predicciones indican un crecimiento de las ventas en el sector farmacéutico para los próximos dos años. En millones de pesos colombianos, se estima un crecimiento de 
+13.500
+m
+i
+l
+l
+o
+n
+e
+s
+a
+13.500millonesa14.081 millones de pesos colombianos. Esto es positivo y muestra una buena oportunidad.
+<br>
+Análisis y Recomendación:
+<br>
+El aumento de los índices de precios (IPP e IPC) representa un factor relevante a considerar. Los precios de los productos tendrán que ajustarse para mantener la rentabilidad. En paralelo, considera la necesidad de buscar la mejor manera para hacer frente a este alza del costo de vida, ya que la demanda del producto puede reducirse.
+<br>
+Sugerencias de decisión:
+<br>
+Ajustar precios: Ten en cuenta los índices de precios al consumidor y al productor al momento de establecer los precios de tus productos farmacéuticos. Un ajuste gradual y estratégico puede ayudar a mantener la competitividad y la rentabilidad.
+Aumentar la eficiencia operativa: Optimizar los procesos de producción, distribución y comercialización puede ayudarte a controlar los costos y a maximizar las ganancias ante la posible inflación.
+Exploración del mercado: Investiga nuevas oportunidades y segmentos del mercado, como el de la venta online y las necesidades de las personas que tienen acceso a las redes sociales, esto podría impactar el crecimiento y la penetración del mercado.
+Control de costos: Implementar medidas de control de costos puede mitigar el impacto de un posible aumento de los precios de las materias primas o del IPC en los próximos meses.
+Inversión en investigación y desarrollo (I+D): Si el sector lo permite, invertir en innovación puede generar nuevas oportunidades de crecimiento y diferenciación en un mercado cambiante.
+Importancia de la metodología:
+<br>
+La utilización de modelos como LSTM, DTW y Prophet indica un análisis profundo y multifacético de los datos. Esta metodología aporta una mayor confianza en las predicciones. Sin embargo, es importante recordar que las predicciones son estimaciones y no garantizan resultados exactos. La monitorización y adaptación constante a los cambios del mercado seguirán siendo cruciales.
+<br>
+Espero que esta información te sea útil para tomar decisiones estratégicas en tu negocio.
+            </p>
+        </div>
+    </div>
+    <div class="container">
+        <div class="box-mini1"><div class="">En general, los resultados muestran un crecimiento esperado y moderado para el sector farmacéutico en los próximos años. </div></div>
+        <div class="box-mini2"><div class="">IPP: El IPP proyectado muestra un crecimiento sostenido en los próximos 24 meses, con una tendencia ligeramente ascendente. El aumento gradual sugiere una inflación moderada que no debería afectar drásticamente la productividad, aunque sí debería tenerse en cuenta a la hora de fijar precios y presupuestos.</div></div>
+    </div>
+</body>
+<script src='https://cdn.plot.ly/plotly-latest.min.js'></script>
+<script type='text/javascript'> 
+    let graphs = {{graphJSON | safe}};
+    Plotly.plot("chart",graphs,{})
+</script>
+</html>
